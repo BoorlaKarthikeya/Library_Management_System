@@ -27,7 +27,7 @@
                 <div id="multi">
                     <label>Enter the Book Quantity</label><br>
                     <input type="number" min="1" name="book_quantity"><br>
-                </div>
+                </div>  
                 <label >Book Number(if any) </label><br>
                 <input name="book_number_list">
             </div>
@@ -37,13 +37,13 @@
     </div>
 
     <div id="new_book_instance" class="books">
-    <form method="POST" action="" class="form-inline">
-        {% csrf_token %}
-        <label>Book</label><br><div>{{form_instance.book}}</div>
-        <label>Book Number</label>
-        <div>{{form_instance.book_number}}</div>
-        <br> <button type="submit" class="btn btn-success">Add Book</button> 
-    </form>
+        <form method="POST" action="{% url 'add_new_book_instance' %}" class="form-inline">
+            {% csrf_token %}
+            <label>Book</label><br><div>{{form_instance.book}}</div>
+            <label>Book Number</label>
+            <div>{{form_instance.book_number}}</div>
+            <br> <button type="submit" class="btn btn-success">Add Book</button> 
+        </form>
     </div>
 
 <script type="text/javascript">

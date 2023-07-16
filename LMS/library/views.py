@@ -65,7 +65,6 @@ def index(request):
     return(render(request, 'index.html'))
 
 
-
 @login_required(login_url="login")
 def add_new_student(request):
     if request.method=="POST":
@@ -89,13 +88,16 @@ def add_new_book(request):
     else:
         form = BookForm
         form_instance=Book_instanceForm
-        return (render(request, 'add_new_book.html', {'form':form,"form_instance":form_instance}))
+        return render(request, 'add_new_book.html', {'form':form,"form_instance":form_instance})
+    
 @login_required(login_url="login")
 def add_new_book_instance(request):
-    form=Book_instanceForm(request.POST)
-    if form.is_valid():
-        form.save()
-    return redirect('/view_books')
+    if request.method=="POST":
+        form=Book_instanceForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return redirect('/view_books')
+    return HttpResponse("Problem")
 
 @login_required(login_url="login")
 def add_book_issue(request):
@@ -111,16 +113,20 @@ def add_book_issue(request):
             form.save_m2m()
         return redirect('/view_books_issued')
     else:
+        print("helloooo")
         context={'form':Book_IssueForm,"book":BookInstance.objects.filter(Is_borrowed=False)}
         return render(request, 'add_book_issue.html',context=context)
+    
 @login_required(login_url="login")
 def view_students(request):
     students = Students.objects.order_by('-id')
     return render(request,'view_students.html', {'students': students})
+
 @login_required(login_url="login")
 def view_books(request):
     books=BookInstance.objects.order_by('id')
     return render(request,'view_books.html', {'books': books})
+
 @login_required(login_url="login")
 def view_bissue(request):
     issue = Book_Issue.objects.order_by('-id')
