@@ -31,8 +31,9 @@
         <td>{{student.program}}</td>
         <td>{{student.Guardian_name}}</td>
         <td>{{student.Email}}</td>
-        <td><a href="edit/student/{{student.roll_number}}"><i class="fa fa-edit"></i></a> | <a
-        href="delete/student/{{student.roll_number}}"><i class="fa fa-trash-alt"></i></a></td>
+        <td><a href="{%url 'Edit_Student_data' student.roll_number %} "><i class="fa fa-edit"></i></a>  
+        {% comment %} <a href="{% url 'Delete_Student_data' student.roll_number|urlencode %}"><i class="fa fa-trash-alt"></i></a> {% endcomment %}
+    </td>
     </tr> {% endfor %}
 </table>
 
