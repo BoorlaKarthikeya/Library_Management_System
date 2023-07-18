@@ -4,12 +4,12 @@
 <body>
 {% block content %}
 
-    <div class="tablinks">
-        <button onclick="opentab(name)" class="link" name="new_book">New Book</button>
-        <button onclick="opentab(name)" class="link" name="new_book_instance">New Book Instance</button>
+    <div class="tablinks fs-2 p-2 py-4 d-flex justify-content-around">
+        <button onclick="opentab(name)" class="link btn btn-primary fs-3 px-3 mx-3 " name="new_book">New Book</button>
+        <button onclick="opentab(name)" class="link btn btn-primary fs-3" name="new_book_instance">New Book Instance</button>
     </div>
 
-    <div id="new_book" class="books">
+    <div id="new_book" class="books d-flex justify-content-center fs-2">
         <form method="POST" action="" class="form-inline">
             {% csrf_token %}
         <label>Book Title.</label><br><div>{{form.book_title}}</div>
@@ -32,11 +32,11 @@
                 <input name="book_number_list">
             </div>
         </div> -->
-        <br> <button type="submit" class="btn btn-success">Add Book</button> 
+        <br> <button type="submit" class="btn btn-success fs-3">Add Book</button> 
         </form>
     </div>
 
-    <div id="new_book_instance" class="books">
+    <div id="new_book_instance fs-3" class="books">
         <form method="POST" action="{% url 'add_new_book_instance' %}" class="form-inline">
             {% csrf_token %}
             <label>Book</label><br><div>{{form_instance.book}}</div>

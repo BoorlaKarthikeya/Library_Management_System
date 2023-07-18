@@ -13,15 +13,15 @@
         <label>Search Results</label>
     </div>
 </div>
-<table class="table table-striped">
+<table class="table table-striped table  table-warning table-striped-columns table-hover px-2 fs-2">
 <tr>
-    <th>Student Roll no </th>
-    <th>Student Name </th>
-    <th>Student Address </th>
-    <th>Student Study Program </th>
-    <th>Student Guardian/parent</th>
-    <th>Guardian/parent Email</th>
-    <th>Actions</th>
+    <th class = "table-primary border border-light">Student Roll no </th>
+    <th class = "table-primary border border-light">Student Name </th>
+    <th class = "table-primary border border-light">Student Address </th>
+    <th class = "table-primary border border-light">Student Study Program </th>
+    <th class = "table-primary border border-light">Student Guardian/parent</th>
+    <th class = "table-primary border border-light">Guardian/parent Email</th>
+    <th class = "table-primary border border-light">Actions</th>
 </tr>
     {%for student in students%}
     <tr id="{{student.fullname}}" class="student">

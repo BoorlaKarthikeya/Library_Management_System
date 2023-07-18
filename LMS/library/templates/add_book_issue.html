@@ -3,10 +3,10 @@
 
 <body>
 {% block content %}
-
+<div class = "d-flex justify-content-center fs-3">
 <form method="POST" action="{% url 'book_issue' %}" class="form-inline">
     {% csrf_token %}
-    <label>Student Details(Name)</label><br>
+    <label class = "fs-3">Student Details(Name)</label><br>
     <div id="student_selection">
         <div>{{form.student}}</div>
             <div><input type="text" placeholder="Quick Student Search" id="quick" onkeyup="Quick_search()">
@@ -17,7 +17,7 @@
     <br>
     <hr>
         <div class="book_selection">
-            <label>Book Details(Name/UUID)</label>
+            <label class = "fs-3">Book Details(Name/UUID)</label>
             <br>
             <div><input type="text" placeholder="Quick Book Search" id="quick_book_search" onkeyup="Quick_book_search()">
                 <div id="quick_book_search_view"></div>
@@ -30,10 +30,11 @@
             </select>
         </div>
     <hr>
-    <label>Remarks</label><br> <div> {{form.remarks_on_issue}}</div>
+    <label class = "fs-3">Remarks</label><br> <div> {{form.remarks_on_issue}}</div>
     <br> 
-    <button type="submit" class="btn btn-success">Issue Book</button>
+    <button type="submit" class="btn btn-success fs-4 p-3">Issue Book</button>
 </form>
+</div>
 
 
 <script type="text/javascript">

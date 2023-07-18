@@ -18,11 +18,6 @@ class Students(models.Model):
 
 
 class Book(models.Model):
-    id = models.UUIDField(
-        primary_key=True,
-        default=uuid.uuid4,
-        help_text="Book unique id across the Library",
-    )
     book_title = models.CharField(max_length=200)
     book_author = models.CharField(max_length=100)
     book_pages = models.PositiveIntegerField()
