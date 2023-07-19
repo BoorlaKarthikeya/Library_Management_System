@@ -3,23 +3,23 @@
 
 <body>
 {% block content %}
-<div class="search">
-    <input type="text" class="form-control" id="books_search_input" name="book_name" placeholder="Search a book" onkeyup="search_books()">
+<div class="search ">
+    <input type="text" class="form-control fs-2 p-2" id="books_search_input" name="book_name" placeholder="Search a book" onkeyup="search_books()">
     <!-- <br> -->
     <div id="book_searched">
         <label>Search Results</label>
     </div>
 </div>
 
-<table class="table table-striped">
+<table class="table  table-warning table-striped-columns table-hover px-2 fs-2">
 <tr>
-    <th>Book ID</th>
-    <th>Book title </th>
-    <th>Book author </th>
-    <th>Book pages </th>
-    <th>book Number </th>
-    <th>Is Available</th>
-    <th>Delete</th>
+    <th class = "table-primary border border-light">Book ID</th>
+    <th class = "table-primary border border-light">Book title </th>
+    <th class = "table-primary border border-light">Book author </th>
+    <th class = "table-primary border border-light">Book pages </th>
+    <th class = "table-primary border border-light">book Number </th>
+    <th class = "table-primary border border-light">Is Available</th>
+    
 </tr>
     {%for book in books%}
     <tr class="book_row">
@@ -31,13 +31,10 @@
     <td>
         {%if  book.Is_borrowed %}
         <span><i class="fa fa-times-circle" style="color:rgb(128, 28, 0)"></i></span>
-        <td>
-            {% comment %} <a href = "{%url 'Edit_book_data' book.id %} "><i class="fa fa-edit"></i></a> {% endcomment %}
-            </td>
+        
         {%else%}
         <span><i class="fa fa-check-circle" style="color:green"></i></span>
-        {% comment %} <td><a href="edit/book/{{book.id}}"><i class="fa fa-edit"></i></a> |  {% endcomment %}
-            <td><a href="delete/book/{{book.id}}"><i class="fa fa-trash-alt"></i></a></td>
+        
         {%endif%}
     </td>
 
