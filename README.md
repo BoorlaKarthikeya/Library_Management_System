@@ -31,23 +31,27 @@ The Library Management System is a web-based application developed using the Dja
   python -m venv venv
   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
+
 3 .Migrate the database:
 
 ```bash
    python manage.py migrate
 ```
+
 4. Create a superuser (admin):
 
 ```bash
 
    python manage.py createsuperuser
 ```
+
 5 . Run the development server:
 
 ```bash
 
    python manage.py runserver
 ```
+
 <h1>Usage</h1>
 Log in as an administrator using the superuser credentials created during installation.
 Start by adding books to the library's collection and managing user accounts.
@@ -61,9 +65,14 @@ Integration with barcode scanners and RFID systems for efficient book tracking.
 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Be sure to follow the code of conduct.
 
-License
-This project is licensed under the MIT License.
-
-Contact
-For inquiries and support, please contact Your Name.
-````
+```
+Demo:
+![Home page](<images/Screenshot%20(165).png>)
+![Login page](<images/Screenshot%20(164).png>)
+![Add Student page](<images/Screenshot%20(166).png>)
+![Add Book page](<images/Screenshot%20(168).png>)
+![Add Book Intance page](<images/Screenshot%20(167).png>)
+![Issue Book page](<images/Screenshot%20(169).png>)
+![Issued Books page](<images/Screenshot%20(172).png>)
+![Students List page](<images/Screenshot%20(171).png>)
+```
