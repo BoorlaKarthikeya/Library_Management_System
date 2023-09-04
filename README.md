@@ -60,10 +60,8 @@ Patrons can access the system to search for books, make reservations, and manage
 Technologies Used
 Django framework
 HTML, CSS, JavaScript for the frontend
-PostgreSQL (or your preferred database) for data storage
-Integration with barcode scanners and RFID systems for efficient book tracking.
-Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. Be sure to follow the code of conduct.
+
+
 
 Demo:
 Home page;
