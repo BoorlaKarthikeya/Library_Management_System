@@ -27,7 +27,7 @@ The Library Management System is a web-based application developed using the Dja
 
 2 . create a virtual environment and install dependencies
 
-````bash
+```bash
   python -m venv venv
   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
