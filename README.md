@@ -65,7 +65,6 @@ Integration with barcode scanners and RFID systems for efficient book tracking.
 Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Be sure to follow the code of conduct.
 
-```
 Demo:
 ![Home page](<images/Screenshot%20(165).png>)
 ![Login page](<images/Screenshot%20(164).png>)
@@ -75,4 +74,4 @@ Demo:
 ![Issue Book page](<images/Screenshot%20(169).png>)
 ![Issued Books page](<images/Screenshot%20(172).png>)
 ![Students List page](<images/Screenshot%20(171).png>)
-```
+
