@@ -4,7 +4,7 @@
 
 The Library Management System is a web-based application developed using the Django framework. It serves as a comprehensive platform for managing various aspects of a library, including cataloging books, handling book circulation, managing user accounts, and generating reports.
 
-![Library Management System Screenshot](/path/to/screenshot.png)
+
 
 ## Features
 
@@ -66,12 +66,26 @@ Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Be sure to follow the code of conduct.
 
 Demo:
+Home page;
+
 ![Home page](<images/Screenshot%20(165).png>)
+Login Page:
+
 ![Login page](<images/Screenshot%20(164).png>)
+Add Student Page :
+
 ![Add Student page](<images/Screenshot%20(166).png>)
+Add Book Page : 
+
 ![Add Book page](<images/Screenshot%20(168).png>)
+Add Book Instance Page :
+
 ![Add Book Intance page](<images/Screenshot%20(167).png>)
+Issue Book page :
+
 ![Issue Book page](<images/Screenshot%20(169).png>)
+List Of Issued Books :
 ![Issued Books page](<images/Screenshot%20(172).png>)
+List of Students :
 ![Students List page](<images/Screenshot%20(171).png>)
 
