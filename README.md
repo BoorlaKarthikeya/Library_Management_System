@@ -30,24 +30,24 @@ The Library Management System is a web-based application developed using the Dja
 ````bash
   python -m venv venv
   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-
+```
 3 .Migrate the database:
 
 ```bash
    python manage.py migrate
-
+```
 4. Create a superuser (admin):
 
 ```bash
 
    python manage.py createsuperuser
-
+```
 5 . Run the development server:
 
 ```bash
 
    python manage.py runserver
-
+```
 <h1>Usage</h1>
 Log in as an administrator using the superuser credentials created during installation.
 Start by adding books to the library's collection and managing user accounts.
